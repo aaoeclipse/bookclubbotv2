@@ -1,13 +1,5 @@
 const db = require('../db/db')
-
-const randG = [
-    'Wadup',
-    'Whats craking',
-    'Yoyoyo',
-    'Whats popin',
-    'what\'s up my dude',
-    'life is hard, but your are harder'
-];
+const randG = require('../personality/greetings')
 
 const name = 'add';
 
@@ -31,7 +23,7 @@ module.exports = {
         async (_, username, client) => {
             // Change state and step of user
             await db.changeState(username, { state: name, step: 1 })
-            client.channel.send(`${randG[Math.floor(Math.random() * randG.length)]} ${username}, i see you want to add a book to the list`);
+            client.channel.send(`${randG()} ${username}, i see you want to add a book to the list`);
             client.channel.send('Insert Title of book: ');
         },
 
