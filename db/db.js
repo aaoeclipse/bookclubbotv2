@@ -140,7 +140,7 @@ const database = {
         if (!book){
             return
         }
-        const bookDeleted = await Book.destroy({
+        return bookDeleted = await Book.destroy({
             where: {
                 id: bookId
             }

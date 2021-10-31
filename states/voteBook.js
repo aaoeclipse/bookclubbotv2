@@ -6,7 +6,7 @@ const command = 'vote'
 module.exports = {
     name: command,
     description: 'User votes for book',
-    howto: `!${command} [id of books seperated by space]`,
+    howto: `!${command} [id of books separated by space]`,
     step: [
         async (content, username, client) => {
             const args = content.slice(prefix.length).trim().split(' ');
@@ -43,7 +43,7 @@ module.exports = {
                 if (!result) {
                     client.channel.send(`Error Voting for ${idOfBook}`)
                 } else {
-                    client.channel.send(`Votes succesfuls for ${idOfBook}`);
+                    client.channel.send(`Votes successful for ${idOfBook}`);
                 }
             }
 

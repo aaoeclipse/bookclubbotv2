@@ -5,7 +5,9 @@ const randG = [
     'See ya!',
     'Bye bye',
     'May the power of Thor always shine to you',
-    'May the three body problems alway stay in your head'
+    'May the three body problems alway stay in your head',
+    "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn",
+    "If I was in squid game I would push you on green light red light"
 ];
 
 module.exports = () => {
