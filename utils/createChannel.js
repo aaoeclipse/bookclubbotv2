@@ -4,7 +4,7 @@
 module.exports = async (client, categoryname, chapters)=>{
     await client.guild.channels.create(`${categoryname}`, {type: "category"});
 
-    if (chapters > 5){
+    if (chapters > 30){
         console.error("fuck that shit");
         return
     }

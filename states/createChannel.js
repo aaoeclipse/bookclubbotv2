@@ -7,8 +7,8 @@ const command = 'channel'
 
 module.exports = {
     name: command,
-    description: 'User votes for book',
-    howto: `!${command} [id of books seperated by space]`,
+    description: 'Create Channel',
+    howto: `!${command} [name of book] [chapters]`,
     step: [
        async (mssg, username, client) => {
         const user_msg =  wordParser(mssg);
